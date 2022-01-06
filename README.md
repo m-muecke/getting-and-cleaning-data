@@ -1,7 +1,26 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# getting-and-cleaning-data
+# Coursera Project - Getting and Cleaning Data
 
 <!-- badges: start -->
 <!-- badges: end -->
+
+My solution for week 4 of the Getting and Cleaning Data by Johns Hopkins
+University Coursera course.
+
+The `R/run_analysis.R` performs the following:
+
+1.  Downloads the Human Activity Recognition Using Smartphones data set
+    from the UCI Machine Learning Repository if it does not already
+    exist in the working directory.
+2.  Loads the activity and feature labels.
+3.  Loads the training and test data.
+4.  Removes all columns besides the mean and standard deviation
+    variables.
+5.  Loads the activity and subject data for each data set and merges
+    them.
+6.  Creates a tidy data set that consists of the average (mean) value of
+    each variable for each subject and activity pair.
+
+The final result is shown in the file `tidy.txt`.
