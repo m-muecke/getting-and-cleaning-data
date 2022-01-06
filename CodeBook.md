@@ -91,9 +91,9 @@ This code book gives a brief summary of the `tidy.txt` data set.
 
 ## Activity Labels
 
-- `1` (`WALKING`): Subject was walking.
-- `2` (`WALKING_UPSTAIRS`): Subject was walking up a staircase.
-- `3` (`WALKING_DOWNSTAIRS`): Subject was walking.
-- `4` (`SITTING`): Subject was sitting.
-- `5` (`STANDING`): Subject was standing.
-- `6` (`LAYING`): Subject was laying down.
+- `WALKING` (1): Subject was walking.
+- `WALKING_UPSTAIRS` (2): Subject was walking up a staircase.
+- `WALKING_DOWNSTAIRS` (3): Subject was walking.
+- `SITTING` (4): Subject was sitting.
+- `STANDING` (5): Subject was standing.
+- `LAYING` (6): Subject was laying down.

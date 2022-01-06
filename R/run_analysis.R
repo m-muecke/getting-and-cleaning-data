@@ -91,6 +91,10 @@ main <- function() {
   # get training data
   complete <- load_data(feature_names, relevant)
   complete <- rename_cols(complete, relevant)
+  complete[, "activity"] <- factor(
+    complete[, "activity"],
+    levels = row.names(label_names), labels = label_names[, "name"]
+  )
   # aggregate records
   complete <- complete %>%
     tidyr::pivot_longer(
@@ -105,6 +109,6 @@ main <- function() {
     tidyr::pivot_wider(
       names_from = "variable", values_from = "value"
     )
-
+  # write tidy data set to file
   write.table(complete, "tidy.txt", row.names = FALSE, quote = FALSE)
 }
